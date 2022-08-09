@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 const fs = require('fs');
 
@@ -14,8 +13,8 @@ const config = {
     },
     plugins: [
         new InjectPlugin.default(function() {
-            // TODO: change this to final module path before uploading final default project to github
-            return fs.readFileSync("./lib/client/cookie-inject.js", {encoding: "utf8"})
+            return fs.readFileSync("./node_modules/bun-patchbay/client/cookie-inject.js",
+                {encoding: "utf8"});
         }, {entryOrder: InjectPlugin.ENTRY_ORDER.First}),
         new CopyPlugin({
             patterns: [{from: 'static', filter: p => !p.endsWith(".js")}]
