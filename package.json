@@ -21,6 +21,6 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-inject-plugin": "^1.5.5",
-    "bun-patchbay": "^0.0.1"
+    "bun-patchbay": "^0.1.0"
   }
 }
