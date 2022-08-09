@@ -1,4 +1,4 @@
-import {Patch, PBRequest, StaticAssetRouter, MainBay, PBUtils} from "./lib";
+import {Patch, PBRequest, StaticAssetRouter, MainBay, PBUtils} from "bun-patchbay";
 
 class UserPage extends Patch {
     entry(req: PBRequest) {
